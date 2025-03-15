@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Board styling */
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Status message styling */
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Row styling */
+  .board-row {
+    display: flex;
+  }
+  
+  /* Square styling */
+  .square {
+    width: 80px;
+    height: 80px;
+    background-color: #efd7d7;
+    border: 2px solid #333;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .square:active {
+    background-color: #ddd;
+  }
+  
+  /* Winning square styling (optional) */
+  .square.winner {
+    background-color: #4caf50;
+    color: #f7e4e4;
+  }
